@@ -106,6 +106,7 @@ class WebStripe extends StripePlatform {
             setupFutureUsage: (options?.setupFutureUsage ??
                     PaymentIntentsFutureUsage.OnSession)
                 .toJs(),
+            returnUrl: options != null && options.returnUrl != null ? options.returnUrl! : window.location.href,
           ),
         );
       },
@@ -139,7 +140,7 @@ class WebStripe extends StripePlatform {
         return js.confirmAlipayPayment(
           paymentIntentClientSecret,
           data: stripe_js.ConfirmAlipayPaymentData(
-            returnUrl: window.location.href,
+            returnUrl: options != null && options.returnUrl != null ? options.returnUrl! : window.location.href,
           ),
         );
       },
@@ -154,7 +155,7 @@ class WebStripe extends StripePlatform {
                 ideal: stripe_js.IdealBankData(bank: paymentData.bankName!),
               ),
             ),
-            returnUrl: window.location.href,
+            returnUrl: options != null && options.returnUrl != null ? options.returnUrl! : window.location.href,
             // recommended
             // setup_future_usage:
           ),

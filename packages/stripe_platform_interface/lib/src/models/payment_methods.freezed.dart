@@ -11522,6 +11522,10 @@ mixin _$PaymentMethodOptions {
   PaymentIntentsFutureUsage? get setupFutureUsage =>
       throw _privateConstructorUsedError;
 
+  ///return URL from payment web page
+  String? get returnUrl =>
+      throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $PaymentMethodOptionsCopyWith<PaymentMethodOptions> get copyWith =>
@@ -11599,7 +11603,7 @@ class __$$_PaymentMethodOptionsCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true)
 class _$_PaymentMethodOptions implements _PaymentMethodOptions {
-  const _$_PaymentMethodOptions({this.setupFutureUsage});
+  const _$_PaymentMethodOptions({this.setupFutureUsage, this.returnUrl});
 
   factory _$_PaymentMethodOptions.fromJson(Map<String, dynamic> json) =>
       _$$_PaymentMethodOptionsFromJson(json);
@@ -11607,6 +11611,9 @@ class _$_PaymentMethodOptions implements _PaymentMethodOptions {
   /// Indicates whether or not you want to reuse this method for future payments.
   @override
   final PaymentIntentsFutureUsage? setupFutureUsage;
+
+  ///return URL from payment web page
+  final String? returnUrl;
 
   @override
   String toString() {
@@ -11643,7 +11650,7 @@ class _$_PaymentMethodOptions implements _PaymentMethodOptions {
 
 abstract class _PaymentMethodOptions implements PaymentMethodOptions {
   const factory _PaymentMethodOptions(
-          {final PaymentIntentsFutureUsage? setupFutureUsage}) =
+          {final PaymentIntentsFutureUsage? setupFutureUsage, final String? returnUrl}) =
       _$_PaymentMethodOptions;
 
   factory _PaymentMethodOptions.fromJson(Map<String, dynamic> json) =

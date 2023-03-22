@@ -135,6 +135,17 @@ class WebStripe extends StripePlatform {
           ),
         );
       },
+      wechat: (data) {
+        // https://stripe.com/docs/js/payment_intents/confirm_alipay_payment#stripe_confirm_alipay_payment-options
+        return js.confirmWechatPayment(
+          paymentIntentClientSecret,
+          data: stripe_js.ConfirmWechatPaymentData(
+            returnUrl: options != null && options.returnUrl != null
+                ? options.returnUrl!
+                : window.location.href,
+          ),
+        );
+      },
       alipay: (data) {
         // https://stripe.com/docs/js/payment_intents/confirm_alipay_payment#stripe_confirm_alipay_payment-options
         return js.confirmAlipayPayment(

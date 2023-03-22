@@ -11,3 +11,5 @@ export 'confirm_sepa_debit_payment_data.dart';
 export 'payment_intent.dart';
 export 'payment_intent_response.dart';
 export 'payment_intent_status.dart';
+export 'confirm_wechat_payment_data.dart';
+export 'confirm_wechat_payment_options.dart';

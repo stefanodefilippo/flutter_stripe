@@ -115,7 +115,7 @@ const _$PaymentMethodTypeEnumMap = {
   PaymentMethodType.sepaDebit: 'sepaDebit',
   PaymentMethodType.sofort: 'sofort',
   PaymentMethodType.usBankAccount: 'usBankAccount',
-  PaymentMethodType.wechatPay: 'wechatPay',
+  PaymentMethodType.wechatPay: 'wechat_pay',
 };
 
 _$_AuBecsDebit _$$_AuBecsDebitFromJson(Map json) => _$_AuBecsDebit(

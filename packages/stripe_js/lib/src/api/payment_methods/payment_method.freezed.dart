@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'payment_method.dart';
 
@@ -557,6 +557,7 @@ class _$_PaymentMethod implements _PaymentMethod {
   @override
   @JsonKey()
   Map<String, dynamic> get metadata {
+    if (_metadata is EqualUnmodifiableMapView) return _metadata;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableMapView(_metadata);
   }
@@ -1411,6 +1412,8 @@ class _$_CardPaymentMethod implements _CardPaymentMethod {
   List<String>? get availableNetworks {
     final value = _availableNetworks;
     if (value == null) return null;
+    if (_availableNetworks is EqualUnmodifiableListView)
+      return _availableNetworks;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
@@ -2572,6 +2575,8 @@ class _$_UsBankAccount implements _UsBankAccount {
   List<String>? get preferredNetworks {
     final value = _preferredNetworks;
     if (value == null) return null;
+    if (_preferredNetworks is EqualUnmodifiableListView)
+      return _preferredNetworks;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
@@ -2584,6 +2589,8 @@ class _$_UsBankAccount implements _UsBankAccount {
   List<String>? get supportedNetworks {
     final value = _supportedNetworks;
     if (value == null) return null;
+    if (_supportedNetworks is EqualUnmodifiableListView)
+      return _supportedNetworks;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }

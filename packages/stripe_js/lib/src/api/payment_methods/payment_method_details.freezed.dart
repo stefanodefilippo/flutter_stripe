@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'payment_method_details.dart';
 
@@ -581,6 +581,10 @@ CardPaymentMethodDetails _$CardPaymentMethodDetailsFromJson(
 
 /// @nodoc
 mixin _$CardPaymentMethodDetails {
+  /// Uses the provided card or cardNumber Element for confirmation.
+  @ElementConverter()
+  Object get card => throw _privateConstructorUsedError;
+
   /// The billing_details associated with the card.
   @JsonKey(name: "billing_details")
   BillingDetails? get billingDetails => throw _privateConstructorUsedError;
@@ -875,6 +879,8 @@ abstract class _CardPaymentMethodRef implements CardPaymentMethodDetails {
   factory _CardPaymentMethodRef.fromJson(Map<String, dynamic> json) =
       _$_CardPaymentMethodRef.fromJson;
 
+  @override
+
   /// Uses the provided card or cardNumber Element for confirmation.
   @ElementConverter()
   Element get card;
@@ -1089,6 +1095,8 @@ abstract class _CardPaymentMethodDetailsToken
   factory _CardPaymentMethodDetailsToken.fromJson(Map<String, dynamic> json) =
       _$_CardPaymentMethodDetailsToken.fromJson;
 
+  @override
+
   /// Uses the provided card or cardNumber Element for confirmation.
   CardToken get card;
   @override
@@ -1118,6 +1126,10 @@ IdealPaymentMethodDetails _$IdealPaymentMethodDetailsFromJson(
 
 /// @nodoc
 mixin _$IdealPaymentMethodDetails {
+  /// Uses the provided card or cardNumber Element for confirmation.
+  @ElementConverter()
+  Object get ideal => throw _privateConstructorUsedError;
+
   /// The billing_details associated with the card.
   @JsonKey(name: "billing_details")
   BillingDetails? get billingDetails => throw _privateConstructorUsedError;
@@ -1416,6 +1428,8 @@ abstract class _IdealPaymentMethodDetails implements IdealPaymentMethodDetails {
   factory _IdealPaymentMethodDetails.fromJson(Map<String, dynamic> json) =
       _$_IdealPaymentMethodDetails.fromJson;
 
+  @override
+
   /// Uses the provided card or cardNumber Element for confirmation.
   @ElementConverter()
   Element get ideal;
@@ -1632,6 +1646,8 @@ abstract class _IdealPaymentMethodDetailsSelfCollect
   factory _IdealPaymentMethodDetailsSelfCollect.fromJson(
           Map<String, dynamic> json) =
       _$_IdealPaymentMethodDetailsSelfCollect.fromJson;
+
+  @override
 
   /// Uses the provided card or cardNumber Element for confirmation.
   IdealBankData get ideal;

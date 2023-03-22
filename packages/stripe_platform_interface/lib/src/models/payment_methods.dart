@@ -309,7 +309,7 @@ enum PaymentMethodType {
   Sofort,
   Upi,
   USBankAccount,
-  // WeChatPay,
+  WeChatPay,
   Unknown
 }
 
@@ -352,6 +352,15 @@ class PaymentMethodParams with _$PaymentMethodParams {
     /// Paymentmethod data for this paymentmethod.
     required PaymentMethodData paymentMethodData,
   }) = _PaymentMethodParamsAlipay;
+
+  @JsonSerializable(explicitToJson: true)
+  @FreezedUnionValue('Wechat')
+
+  /// Config parameters for Wechat card payment method.
+  const factory PaymentMethodParams.wechat({
+    /// Paymentmethod data for this paymentmethod.
+    required PaymentMethodData paymentMethodData,
+  }) = _PaymentMethodParamsWechat;
 
   @JsonSerializable(explicitToJson: true)
   @FreezedUnionValue('Ideal')

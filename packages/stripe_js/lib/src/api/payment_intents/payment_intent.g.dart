@@ -183,7 +183,7 @@ const _$PaymentMethodTypeEnumMap = {
   PaymentMethodType.sepaDebit: 'sepaDebit',
   PaymentMethodType.sofort: 'sofort',
   PaymentMethodType.usBankAccount: 'usBankAccount',
-  PaymentMethodType.wechatPay: 'wechatPay',
+  PaymentMethodType.wechatPay: 'wechat_pay',
 };
 
 const _$PaymentIntentSetupFutureUsageEnumMap = {

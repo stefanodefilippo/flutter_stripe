@@ -43,6 +43,7 @@ const _$PaymentMethodTypeEnumMap = {
   PaymentMethodType.Sofort: 'Sofort',
   PaymentMethodType.Upi: 'Upi',
   PaymentMethodType.USBankAccount: 'USBankAccount',
+  PaymentMethodType.WeChatPay: 'WeChatPay',
   PaymentMethodType.Unknown: 'Unknown',
 };
 

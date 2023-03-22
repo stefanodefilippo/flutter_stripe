@@ -6,3 +6,4 @@ export 'confirm_payment.dart';
 export 'confirm_sepa_debit_payment.dart';
 export 'handle_card_action.dart';
 export 'retrieve_payment_intent.dart';
+export 'confirm_wechat_payment.dart';

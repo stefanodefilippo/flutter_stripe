@@ -270,6 +270,21 @@ Map<String, dynamic> _$$_PaymentMethodParamsAlipayToJson(
       'paymentMethodType': instance.$type,
     };
 
+_$_PaymentMethodParamsWechat _$$_PaymentMethodParamsWechatFromJson(
+        Map<String, dynamic> json) =>
+    _$_PaymentMethodParamsWechat(
+      paymentMethodData: PaymentMethodData.fromJson(
+          json['paymentMethodData'] as Map<String, dynamic>),
+      $type: json['paymentMethodType'] as String?,
+    );
+
+Map<String, dynamic> _$$_PaymentMethodParamsWechatToJson(
+        _$_PaymentMethodParamsWechat instance) =>
+    <String, dynamic>{
+      'paymentMethodData': instance.paymentMethodData.toJson(),
+      'paymentMethodType': instance.$type,
+    };
+
 _$_PaymentMethodParamsIdeal _$$_PaymentMethodParamsIdealFromJson(
         Map<String, dynamic> json) =>
     _$_PaymentMethodParamsIdeal(
@@ -741,6 +756,7 @@ _$_PaymentMethodOptions _$$_PaymentMethodOptionsFromJson(
     _$_PaymentMethodOptions(
       setupFutureUsage: $enumDecodeNullable(
           _$PaymentIntentsFutureUsageEnumMap, json['setupFutureUsage']),
+      returnUrl: json['returnUrl'] as String?,
     );
 
 Map<String, dynamic> _$$_PaymentMethodOptionsToJson(
@@ -748,6 +764,7 @@ Map<String, dynamic> _$$_PaymentMethodOptionsToJson(
     <String, dynamic>{
       'setupFutureUsage':
           _$PaymentIntentsFutureUsageEnumMap[instance.setupFutureUsage],
+      'returnUrl': instance.returnUrl,
     };
 
 const _$PaymentIntentsFutureUsageEnumMap = {
